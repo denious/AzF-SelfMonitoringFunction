@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfMonitoringFunction", "SelfMonitoringFunction.csproj", "{52D99934-01C4-41C3-9FA8-A772FF878A13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfMonitoringFunction", "Functions\SelfMonitoringFunction.csproj", "{52D99934-01C4-41C3-9FA8-A772FF878A13}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfMonitoringFunctionTests", "Tests\SelfMonitoringFunctionTests.csproj", "{635BC0DC-8C59-45E8-B32D-A82DBC593D60}"
 EndProject
