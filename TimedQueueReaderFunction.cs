@@ -1,3 +1,4 @@
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 
@@ -14,9 +15,10 @@ public class TimedQueueReaderFunction
 
     [FunctionName(nameof(TimedQueueReaderFunction))]
     public async Task Run(
-        [TimerTrigger("*/10 * * * * *", RunOnStartup = true)]
-        TimerInfo timer)
+        [TimerTrigger("*/30 * * * * *", RunOnStartup = true)]
+        TimerInfo timer,
+        CancellationToken cancellationToken)
     {
-        await _emailServiceSemaphore.SendEmails();
+        await _emailServiceSemaphore.SendEmails(cancellationToken);
     }
 }

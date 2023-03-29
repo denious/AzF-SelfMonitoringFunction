@@ -4,6 +4,11 @@
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+    <None Remove="SelfMonitoringFunction.sln.DotSettings" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Azure.Storage.Queues" Version="12.13.1" />
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="5.1.1" />
