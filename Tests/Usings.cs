@@ -1,0 +1,9 @@
+global using Xunit;
+global using AutoFixture.AutoMoq;
+global using AutoFixture;
+global using Azure.Storage.Queues.Models;
+global using Azure.Storage.Queues;
+global using Azure;
+global using Microsoft.Extensions.Logging;
+global using Moq;
+global using SelfMonitoringFunction;
